@@ -1,370 +1,543 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Likeable Dating</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <!-- CSS only -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
-      crossorigin="anonymous"
-    />
 
-    <noscript
-      ><link rel="stylesheet" href="assets/css/noscript.css"
-    /></noscript>
-  </head>
-  <body class="is-preload">
-    <!-- Wrapper -->
-    <div>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<div class="container-fluid">
+<head>
+	<title>Likeable Dating</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- responsive.css -->
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+		<!-- you need javascript to run this -->
+	</noscript>
+
+</head>
+
+<body style="background: white;">
+	<!-- Wrapper -->
+	<!-- header tag -->
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<div style="max-width: 950px;"class="container">
 				<a class="navbar-brand" href="#">
 					<img src="images/logo.svg" alt="" width="100%" height="100%">
-				  </a>
-	
-			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			  </button>
-			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-					<li class="nav-item">
-						<a class="nav-link" href="#">Services</a>
-					  </li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Prices</a>
-					  </li>
-					  <li class="nav-item">
-						<a class="nav-link" href="#"> About us</a>
-					  </li>
-					  <li class="nav-item">
-						<a class="nav-link" href="#"> Contact</a>
-					  </li>
-				</ul>
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarToggler">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+						<li class="nav-item">
+							<a  class="nav-link" href="#">Services</a>
+						</li>
+						<li class="nav-item">
+							<a  class="nav-link" href="#"> Prices </a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"> About us </a>
+						</li>
+						<li class="nav-item">
+							<a  class="nav-link" href="#">Contact </a>
+						</li>
+					</ul>
 
-				
-				
-			  </div>
+				</div>
 			</div>
-		  </nav>
-		  
+		</nav>
+	</header>
 
-      <!-- hero -->
-      <!-- <section
-        class="banner style5 orient-left content-align-center"
-      >
-        <div style="justify-content: center;"class="content">
-          <h1 style="font-weight: 800">
-            Dating, the way it's <br />
-            meant to be
-          </h1>
 
-          <div class="col-auto">
-            <button
-              style="font-size: 17px"
-              type="button"
-              class="btn btn-light btn-lg"
-            >
-              <img src="images/appstored.png" />
+	<!-- hero -->
 
-              Download app <img src="images/playmarketd.png" />
-            </button>
-          </div>
-        </div>
-        <div class="image">
-          <img src="images/Hero-image.svg" alt="" />
-        </div>
-      </section> -->
 
-	 <!-- feel -->
-	  <section id="feel-card">
-        <div class="d-flex justify-content-center">
-			<h2 style="font-weight: 800; font-size: 46px; padding-bottom: 20px;">
+	 <!-- <div class="banner style5">
+		<div style="justify-content: center;" class="content">
+			<h1 style="font-weight: 800">
+				Dating, the way it's <br />
+				meant to be
+			</h1>
+
+			<div class="col-auto">
+				<button style="font-size: 14px; width:200px; padding:10px; border-radius: 5px;" type="button"
+					class="btn btn-light ">
+					<img style=" padding-right:10px" width="35" height="35" src="images/appstored.svg" /><a
+						class="download_apptext" href="#" target="_blank">Download app</a><img
+						style=" padding-left:10px" width="35" height="35" src="images/playmarketd.svg" />
+				</button>
+			</div>
+		</div>
+		<div class="image">
+			<img src="images/Hero-image.svg" alt="" />
+		</div>
+	</div>  -->
+
+
+
+
+
+
+
+	<!-- feel -->
+	<section id="feel-card">
+		<div class="d-flex justify-content-center ">
+			<h2 class="letter_feel">
 				What do you feel like?
-			  </h2>
-			
-			 
+			</h2>
+
+
+		</div>
+		</div>
+		<div style="max-width: 950px;" class="container container_feel">
+			<div class="row row-cols-4 row-cols-sm-4 ">
+				<div class="col">
+					<div style="border:none;" class="card_feel">
+						
+						<img src="images/illustration1.svg" class="card-img-top" alt="..." />
+
+					</div>
+				</div>
+				<div class="col">
+					<div style="border:none;" class="card_feel">
+						<img src="images/illustration2.svg" class="card-img-top" alt="..." />
+
+					</div>
+				</div>
+				<div class="col">
+					<div style="border:none;" class="card_feel">
+						<img src="images/illustration3.svg" class="card-img-top" alt="..." />
+
+					</div>
+				</div>
+				<div class="col">
+					<div style="border:none;" class="card_feel">
+						<img src="images/illustration4.svg" class="card-img-top" alt="..." />
+
+					</div>
+				</div>
 			</div>
-		  </div>
-        <div style="max-width: 950px;" class="container">
-          <div class="row row-cols-1 row-cols-sm-4 g-10">
-            <div class="col">
-              <div style="border:none;" class="card">
-                <img src="images/illustration1.svg" class="card-img-top" alt="..." />
-               
-              </div>
-            </div>
-            <div class="col">
-              <div style="border:none;" class="card">
-                <img src="images/illustration2.svg" class="card-img-top" alt="..." />
-               
-              </div>
-            </div>
-            <div class="col">
-              <div  style="border:none;"class="card">
-                <img src="images/illustration3.svg" class="card-img-top" alt="..." />
-                
-              </div>
-            </div>
-            <div class="col">
-              <div style="border:none;" class="card">
-                <img src="images/illustration4.svg" class="card-img-top" alt="..." />
-               
-              </div>
-            </div>
-          </div>
-        </div>
-	  </section>
+
+			<div class="row align-items-start about_feel">
+				<div class="col">
+					Movie nights
+				</div>
+				<div class="col">
+					Night out
+				</div>
+				<div class="col">
+					Quiet time
+				</div>
+				<div class="col">
+					Out of the ordinary
+				</div>
+			</div>
+
+		</div>
+	</section>
 
 
-	  <!-- app-view -->
-	  <section id="app-view">
-		  <div style="overflow: hidden;"class="container">
-		  <div>
-			  <img src="images/illustration6.png"  style="width: 100%; height: 100%;"alt=""/>
-		  </div>
+	<!-- app-view -->
+	<section id="app-view">
+		<div style="max-width: 950px;" style="overflow: hidden;" class="container">
+			<div>
+				<img src="images/illustration6.png" style="width: 100%; height: 100%;" alt="" />
+			</div>
 		</div>
 
-	  </section>
+	</section>
 
-            <!-- about likable -->
-	    <section id="about-likable">
-		  <div  style="max-width: 940px;" class="container">
-			<div class=" d-flex justify-content-center" >
-				<h2 style="font-weight: 800; font-size: 46px; padding-bottom: 20px;">
+	<!-- about likable -->
+	<section id="about-likable" class="padding_likable">
+		<div style="max-width: 950px;" class="container container_likable">
+			<div class=" d-flex justify-content-center text-center">
+				<h2 class="likable_about">
 					What is Likeable Dating?
-				  </h2>
-			  </div> 
-			  <div style="font-family: 'Arial', Arial, sans-serif; line-height:40px;" class="container">
+				</h2>
+			</div>
+			<div class="container">
 				<div class="row">
-				  <div style="padding-top: 30px;"class="col-sm-7">
-					<ul>
-						<li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" class="bi bi-dot" viewBox="0 0 16 16">
-							<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
-						  </svg>Get away <strong>from swiping</strong></li>
-						<li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-dot" viewBox="0 0 16 16">
-							<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
-						  </svg>Get out there, like <strong>it's meant to be!</strong></li>
-						<li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" class="bi bi-dot" viewBox="0 0 16 16">
-							<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
-						  </svg>Likeable Dating is <strong>match and event based! <br> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="transparent" class="bi bi-dot" viewBox="0 0 16 16">
-							<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/> </strong> Choose the way which suits you!</li>
-						<li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-dot" viewBox="0 0 16 16">
-							<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
-						  </svg><strong>Verified profiles</strong> at your fingertips</li>
-						<li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" class="bi bi-dot" viewBox="0 0 16 16">
-							<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
-						  </svg><strong>Refreshing and evergrowing</strong> services</li>
-						<li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-dot" viewBox="0 0 16 16">
-							<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
-						  </svg>The <strong>one app to rule them all</strong>... we hope! </li>
-					</ul>
-				  </div>
-				  
-				  <div class="col-sm-5">
-					  <image>
-						  <img  style="width: 100%; height: 100%; overflow: hidden;"src="images/illustration5.svg"
-					  </image>
-				  </div>
-				</div>
-
-
-			</div>
-		  </div>
-	    </section>
-			  
-
-		<!-- services -->
-		<section id="services">
-			<div class=" d-flex justify-content-center" >
-				<h2 style="font-weight: 800; font-size: 46px; padding-bottom: 20px;">
-					Our Services
-				  </h2>
-			  </div> 
-
-			<div style="max-width: 940px;"class="container">
-				<div class="row row-cols-2 row-cols-md-3 g-3">
-					<div class="col">
-					  <div class="card h-100">
-						<img src="..." class="card-img-top" alt="...">
-						<div class="card-body">
-						  <h6 class="card-title">Lets Hangout Tonight!</h6>
-						</div>
-					  </div>
+					<div class="col-sm text_about">
+						<ul>
+							<li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue"
+									class="bi bi-dot" viewBox="0 0 16 16">
+									<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+								</svg>Get away <strong>from swiping</strong></li>
+							<li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red"
+									class="bi bi-dot" viewBox="0 0 16 16">
+									<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+								</svg>Get out there, like <strong>it's meant to be!</strong></li>
+							<li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue"
+									class="bi bi-dot" viewBox="0 0 16 16">
+									<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+								</svg>Likeable Dating is <strong>match and event based! <br> <svg
+										xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="transparent"
+										class="bi bi-dot" viewBox="0 0 16 16">
+										<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" /> </strong> Choose the
+								way which suits you!</li>
+							<li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red"
+									class="bi bi-dot" viewBox="0 0 16 16">
+									<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+								</svg><strong>Verified profiles</strong> at your fingertips</li>
+							<li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue"
+									class="bi bi-dot" viewBox="0 0 16 16">
+									<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+								</svg><strong>Refreshing and evergrowing</strong> services</li>
+							<li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red"
+									class="bi bi-dot" viewBox="0 0 16 16">
+									<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+								</svg>The <strong>one app to rule them all</strong>... we hope! </li>
+						</ul>
 					</div>
-					<div class="col">
-					  <div class="card h-100">
-						<img src="..." class="card-img-top" alt="...">
-						<div class="card-body">
-						  <h6 class="card-title">Causal streams</h6>
-						</div>
-					  </div>
-					</div>
-					<div class="col">
-					  <div class="card h-100">
-						<img src="..." class="card-img-top" alt="...">
-						<div class="card-body">
-						  <h6 class="card-title">Blind dates</h6>
-						</div>
-					  </div>
-					</div>
-					<div class="col">
-					  <div class="card h-100">
-						<img src="..." class="card-img-top" alt="...">
-						<div class="card-body">
-						  <h6 class="card-title">Group dates</h6>
-						</div>
-					  </div>
-					</div>
-					<div class="col">
-						<div class="card h-100">
-						  <img src="..." class="card-img-top" alt="...">
-						  <div class="card-body">
-							<h6 class="card-title">Events</h6>
-						  </div>
-						</div>
-					  </div>
-					  <div class="col">
-						<div class="card h-100">
-						  <img src="..." class="card-img-top" alt="...">
-						  <div class="card-body">
-							<h6 class="card-title">Matches</h6>
-						  </div>
-						</div>
-					  </div>
-					  
-				  </div>
-			</div>
 
-		</section>
-		<section id="theapp">
-			<div  style="max-width: 940px;" class="container">
-				<div class=" d-flex justify-content-center text-center" >
-					<h2 style="font-weight: 600; font-size: 46px; padding-bottom: 20px; ">
-						Make Likeable Dating the app you <br> want it to be!
-					  </h2>
-				  </div> 
-
-				  <div>
-					<img src="images/illustration7.svg"  style="width: 100%; height: 100%;"alt=""/>
-				</div>
-				<div>
-					<div class="container">
-						<div style="font-size:13px; padding-top:30px;"class="row align-items-start">
-						  <div class="col">
-							Meet Any Gender
-						  </div>
-						  <div class="col">
-							Create Any Event
-						  </div>
-						  <div class="col">
-								Plan Get Togethers
-						  </div>
-						  <div class="col">
-							Connect With Lost Connections
-						  </div>
-						</div>
-
-				</div>
-			</div>
-		</section>
-
-
-		
-		<!-- slider -->
-		<section>
-			<div class="layout">
-				<div class="container">
-					
-			
-				</div>	
-			</div>
-			
-		</section>
-
-
-
-		<div id="about-likable">
-			<div>
-				<div style="font-family: 'Arial', Arial, sans-serif; line-height:40px;" class="container">
-				  <div class="row">
-					<div style="padding-top: 30px;"class="col-sm-7">
+					<div class="col-sm image_about">
 						<image>
-							<img  style="width: 100%; height: 100%; overflow: hidden;"src="images/illustration10@3x.png">
-						</image>
+							<img style="width: 100%; height: 100%; overflow: hidden;" src="images/illustration5.svg"
+								</image>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</section>
+
+
+	<!-- services -->
+	<section id="services">
+		<div class=" d-flex justify-content-center">
+			<h2 style="font-weight: 800; font-size: 46px; padding-bottom: 20px;">
+				Our Services
+			</h2>
+		</div>
+
+		<div style="max-width: 940px;" class="container container_services ">
+			<div class="row row-cols-2 row-cols-lg-3 g-3 ">
+				<div class="col ">
+					<div class="card h-10 justify-content-center ">
+						<i class="fa fa-glass" aria-hidden="true"></i>
+
+						<div class="card-body">
+							<h6 class="card-title">Lets Hangout Tonight!</h6>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card h-100">
+						<i class="fa fa-video-camera" aria-hidden="true"></i>
+
+						<div class="card-body">
+							<h6 class="card-title">Causal streams</h6>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card h-100">
+
+						<div class="card-body">
+							<h6 class="card-title">Blind dates</h6>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card h-100">
+						<i class="fa fa-users" aria-hidden="true"></i>
+
+						<div class="card-body">
+							<h6 class="card-title">Group dates</h6>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card h-100">
+
+						<div class="card-body">
+							<h6 class="card-title">Events</h6>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card h-100">
+						<i class="fa fa-search" aria-hidden="true"></i>
+
+						<div class="card-body">
+							<h6 class="card-title">Matches</h6>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</section>
+
+
+
+	<section id="theapp">
+		<div style="max-width: 950px;" class="container container_app">
+			<div class=" d-flex justify-content-center text-center">
+				<h2 class="letter_app">
+					Make Likeable Dating the app you <br> want it to be!
+				</h2>
+			</div>
+
+			<div>
+				<img src="images/illustration7.svg" style="width: 100%; height: 100%;" alt="" />
+			</div>
+
+			<div>
+				<div class="container">
+					<div class="row align-items-start about_app">
+						<div class="col">
+							Meet Any Gender
+						</div>
+						<div class="col">
+							Create Any Event
+						</div>
+						<div class="col">
+							Plan Get Togethers
+						</div>
+						<div class="col">
+							Connect With Lost Connections
+						</div>
 					</div>
 
-					<div  style="padding-top:200px;"class="col-sm-5">
-						<h6>
+				</div>
+
+			</div>
+	</section>
+
+
+
+	<!-- slider -->
+	<section id="theslider">
+		<div class="layout">
+			<div class="container container_slider">
+				<div class=" d-flex justify-content-center text-center">
+					<h1>Simple layout at your finger tips</h1>
+				</div>
+
+
+				<div class="img-comp-container">
+
+					<div class="img-comp-img">
+
+						<img src="images/illustration8.svg" width="800" height="800">
+					</div>
+					<div class="img-comp-img img-comp-overlay">
+						<img src="images/illustration8.svg" width="800" height="800">
+					</div>
+
+				</div>
+
+
+
+
+
+
+			</div>
+		</div>
+
+	</section>
+
+
+
+
+
+
+	<div id="about-likable">
+		<div>
+			<div class="container">
+
+				<div class="avatar">
+				</div>
+				<div class="row">
+					<div class="col image_ok">
+						<image>
+							<img style="width: 100%; height:100%; overflow: hidden; " src="images/illustration101.svg">
+						</image>
+
+
+
+
+					</div>
+
+					<div class="col letter_ok">
+						<h6 class="meet__line">
 							Meet new people, hang out, go on dates, from friendships or
-                    relationship.
+							relationship.
 						</h6>
 						<div>
 							<button
-							style="font-size: 12px"
-							type="button"
-							class="btn btn-light btn-lg"
-						  >
-							<img src="images/appstored.png" />
-							Download app <img src="images/playmarketd.png" />
-						  </button>
+								style="font-size: 12px; border-radius: 10px; outline:none; background-color: rgb(255, 0, 0); color:white"
+								type="button" class="btn active">
+								<img style="height:23px; width:23px; padding-right:5px" src="images/appstore.svg" /><a
+									class="download_apptextbottom" href="#" target="_blank"> Download app</a>
+								<img style="height:23px; width:23px; padding-left:5px" src="images/playmarket.svg" />
+
+							</button>
 						</div>
 					</div>
-				  </div>
+				</div>
 			</div>
-	
-
-
-		
-			  <div>
-				<image>
-					<img  style="width: 100%; height: 100%; "src="images/illustration11.svg">
-				</image>
-
-			  </div>
-
-		
-				
 
 
 
-		
-		
 
 
-		
-
-			  
-		 
-
-	 
 
 
-	  
+			<div class="footer_likable">
 
 
-    </div>
+				<div class="container-md container_footer">
 
-    <!-- Scripts -->
-    <!-- JavaScript Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-      crossorigin="anonymous"
-    ></script>
+					<div class="navbar-brand" href="#">
 
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-  </body>
+						<img style="width:200px;" src="images/logo-white.svg" alt="" width="100%" height="100%">
+					</div>
+				</div>
+				<div>
+					<div class="container">
+						<div class="row justify-content-left">
+							<div class="col-lg-2">
+								<div> <a href="#">Services</a></div>
+								<div><a href="#">Prices</a></div>
+								<div><a href="#">About us</a></div>
+
+							</div>
+							<div class="col-lg-2">
+								<div>
+									<a href="#">Privacy Policy</a>
+								</div>
+								<div>
+									<a href="#">Terms and Conditions </a>
+								</div>
+								<div>
+									<a href="#">Contact</a>
+								</div>
+
+
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+			</div>
+
+
+		</div>
+
+
+
+	</div>
+
+	<!-- Scripts -->
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+		crossorigin="anonymous"></script>
+	<script>
+		function initComparisons() {
+			var x, i;
+			/*find all elements with an "overlay" class:*/
+			x = document.getElementsByClassName("img-comp-overlay");
+			for (i = 0; i < x.length; i++) {
+				/*once for each "overlay" element:
+				pass the "overlay" element as a parameter when executing the compareImages function:*/
+				compareImages(x[i]);
+			}
+			function compareImages(img) {
+				var slider, img, clicked = 0, w, h;
+				/*get the width and height of the img element*/
+				w = img.offsetWidth;
+				h = img.offsetHeight;
+				/*set the width of the img element to 50%:*/
+				img.style.width = (w / 2) + "px";
+				/*create slider:*/
+				slider = document.createElement("DIV");
+				slider.setAttribute("class", "img-comp-slider");
+				/*insert slider*/
+				img.parentElement.insertBefore(slider, img);
+				/*position the slider in the middle:*/
+				slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
+				slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+				/*execute a function when the mouse button is pressed:*/
+				slider.addEventListener("mousedown", slideReady);
+				/*and another function when the mouse button is released:*/
+				window.addEventListener("mouseup", slideFinish);
+				/*or touched (for touch screens:*/
+				slider.addEventListener("touchstart", slideReady);
+				/*and released (for touch screens:*/
+				window.addEventListener("touchend", slideFinish);
+				function slideReady(e) {
+					/*prevent any other actions that may occur when moving over the image:*/
+					e.preventDefault();
+					/*the slider is now clicked and ready to move:*/
+					clicked = 1;
+					/*execute a function when the slider is moved:*/
+					window.addEventListener("mousemove", slideMove);
+					window.addEventListener("touchmove", slideMove);
+				}
+				function slideFinish() {
+					/*the slider is no longer clicked:*/
+					clicked = 0;
+				}
+				function slideMove(e) {
+					var pos;
+					/*if the slider is no longer clicked, exit this function:*/
+					if (clicked == 0) return false;
+					/*get the cursor's x position:*/
+					pos = getCursorPos(e)
+					/*prevent the slider from being positioned outside the image:*/
+					if (pos < 0) pos = 0;
+					if (pos > w) pos = w;
+					/*execute a function that will resize the overlay image according to the cursor:*/
+					slide(pos);
+				}
+				function getCursorPos(e) {
+					var a, x = 0;
+					e = e || window.event;
+					/*get the x positions of the image:*/
+					a = img.getBoundingClientRect();
+					/*calculate the cursor's x coordinate, relative to the image:*/
+					x = e.pageX - a.left;
+					/*consider any page scrolling:*/
+					x = x - window.pageXOffset;
+					return x;
+				}
+				function slide(x) {
+					/*resize the image:*/
+					img.style.width = x + "px";
+					/*position the slider:*/
+					slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+				}
+			}
+		}
+	</script>
+	<script>
+		/*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/
+		initComparisons();
+	</script>
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+
 </html>

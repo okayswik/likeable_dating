@@ -1,6 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
 html,
 body,
 div,
@@ -73,7 +73,6 @@ footer,
 header,
 hgroup,
 menu,
-nav,
 output,
 ruby,
 summary,
@@ -87,10 +86,10 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-}
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.5px;
 
-body {
-  background-image: url("/images/Hero-image.png");
+  scroll-behavior: smooth;
 }
 
 article,
@@ -206,6 +205,36 @@ body.is-preload *:after {
   -webkit-transition: none !important;
   -ms-transition: none !important;
   transition: none !important;
+}
+body.is-preload:before {
+  -moz-animation: spinner-show 1.5s 1 0.25s ease forwards,
+    spinner-hide 02.25s ease-in-out forwards !important;
+  -webkit-animation: spinner-show 1.5s 1 0.25s ease forwards,
+    spinner-hide 02.25s ease-in-out forwards !important;
+  -ms-animation: spinner-show 1.5s 1 0.25s ease forwards,
+    spinner-hide 02.25s ease-in-out forwards !important;
+  animation: spinner-show 1.5s 1 0.25s ease forwards,
+    spinner-hide 02.25s ease-in-out forwards !important;
+  -moz-transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  color: rgb(197, 173, 173);
+  content: "\f1ce";
+  cursor: default;
+  display: block;
+  font-size: 2em;
+  height: 2em;
+  left: 50%;
+  line-height: 2em;
+  margin: -1em 0 0 -1em;
+  opacity: 0;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  width: 2em;
+
+  z-index: -1;
 }
 
 /* Type */
@@ -459,442 +488,6 @@ h6 {
   color: #000000;
 }
 
-blockquote {
-  border-left-color: rgba(0, 0, 0, 0.2);
-}
-
-code {
-  background: rgba(0, 0, 0, 0.05);
-  border-color: rgba(0, 0, 0, 0.2);
-}
-
-hr {
-  border-bottom-color: rgba(0, 0, 0, 0.2);
-}
-
-/* Banner (transitions) */
-
-.banner.onload-content-fade-up .content {
-  -moz-transition: opacity 0.75s ease-in-out, -moz-transform 0.75s ease-in-out;
-  -webkit-transition: opacity 0.75s ease-in-out,
-    -webkit-transform 0.75s ease-in-out;
-  -ms-transition: opacity 0.75s ease-in-out, -ms-transform 0.75s ease-in-out;
-  transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
-}
-
-body.is-preload .banner.onload-content-fade-up .content {
-  -moz-transform: translateY(1rem);
-  -webkit-transform: translateY(1rem);
-  -ms-transform: translateY(1rem);
-  transform: translateY(1rem);
-  opacity: 0;
-  background-image: url("/images/Hero-image.png");
-}
-
-.banner.onload-content-fade-down .content {
-  -moz-transition: opacity 0.75s ease-in-out, -moz-transform 0.75s ease-in-out;
-  -webkit-transition: opacity 0.75s ease-in-out,
-    -webkit-transform 0.75s ease-in-out;
-  -ms-transition: opacity 0.75s ease-in-out, -ms-transform 0.75s ease-in-out;
-  transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
-}
-
-body.is-preload .banner.onload-content-fade-down .content {
-  -moz-transform: translateY(-1rem);
-  -webkit-transform: translateY(-1rem);
-  -ms-transform: translateY(-1rem);
-  transform: translateY(-1rem);
-  opacity: 0;
-}
-
-.banner.onload-content-fade-left .content {
-  -moz-transition: opacity 0.75s ease-in-out, -moz-transform 0.75s ease-in-out;
-  -webkit-transition: opacity 0.75s ease-in-out,
-    -webkit-transform 0.75s ease-in-out;
-  -ms-transition: opacity 0.75s ease-in-out, -ms-transform 0.75s ease-in-out;
-  transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
-}
-
-body.is-preload .banner.onload-content-fade-left .content {
-  -moz-transform: translateX(1rem);
-  -webkit-transform: translateX(1rem);
-  -ms-transform: translateX(1rem);
-  transform: translateX(1rem);
-  opacity: 0;
-}
-
-.banner.onload-content-fade-right .content {
-  -moz-transition: opacity 0.75s ease-in-out, -moz-transform 0.75s ease-in-out;
-  -webkit-transition: opacity 0.75s ease-in-out,
-    -webkit-transform 0.75s ease-in-out;
-  -ms-transition: opacity 0.75s ease-in-out, -ms-transform 0.75s ease-in-out;
-  transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
-}
-
-body.is-preload .banner.onload-content-fade-right .content {
-  -moz-transform: translateX(-1rem);
-  -webkit-transform: translateX(-1rem);
-  -ms-transform: translateX(-1rem);
-  transform: translateX(-1rem);
-  opacity: 0;
-}
-
-.banner.onload-content-fade-in .content {
-  -moz-transition: opacity 0.75s ease-in-out;
-  -webkit-transition: opacity 0.75s ease-in-out;
-  -ms-transition: opacity 0.75s ease-in-out;
-  transition: opacity 0.75s ease-in-out;
-}
-
-body.is-preload .banner.onload-content-fade-in .content {
-  opacity: 0;
-}
-
-.banner.onload-image-fade-up .image {
-  -moz-transition: opacity 0.75s ease-in-out, -moz-transform 0.75s ease-in-out;
-  -webkit-transition: opacity 0.75s ease-in-out,
-    -webkit-transform 0.75s ease-in-out;
-  -ms-transition: opacity 0.75s ease-in-out, -ms-transform 0.75s ease-in-out;
-  transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
-}
-
-.banner.onload-image-fade-up .image img {
-  -moz-transition: opacity 0.75s ease-in-out;
-  -webkit-transition: opacity 0.75s ease-in-out;
-  -ms-transition: opacity 0.75s ease-in-out;
-  transition: opacity 0.75s ease-in-out;
-  -moz-transition-delay: 0.5625s;
-  -webkit-transition-delay: 0.5625s;
-  -ms-transition-delay: 0.5625s;
-  transition-delay: 0.5625s;
-}
-
-body.is-preload .banner.onload-image-fade-up .image {
-  -moz-transform: translateY(1rem);
-  -webkit-transform: translateY(1rem);
-  -ms-transform: translateY(1rem);
-  transform: translateY(1rem);
-  opacity: 0;
-}
-
-body.is-preload .banner.onload-image-fade-up .image img {
-  opacity: 0;
-}
-
-.banner.onload-image-fade-down .image {
-  -moz-transition: opacity 0.75s ease-in-out, -moz-transform 0.75s ease-in-out;
-  -webkit-transition: opacity 0.75s ease-in-out,
-    -webkit-transform 0.75s ease-in-out;
-  -ms-transition: opacity 0.75s ease-in-out, -ms-transform 0.75s ease-in-out;
-  transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
-}
-
-.banner.onload-image-fade-down .image img {
-  -moz-transition: opacity 0.75s ease-in-out;
-  -webkit-transition: opacity 0.75s ease-in-out;
-  -ms-transition: opacity 0.75s ease-in-out;
-  transition: opacity 0.75s ease-in-out;
-  -moz-transition-delay: 0.5625s;
-  -webkit-transition-delay: 0.5625s;
-  -ms-transition-delay: 0.5625s;
-  transition-delay: 0.5625s;
-}
-
-body.is-preload .banner.onload-image-fade-down .image {
-  -moz-transform: translateY(-1rem);
-  -webkit-transform: translateY(-1rem);
-  -ms-transform: translateY(-1rem);
-  transform: translateY(-1rem);
-  opacity: 0;
-}
-
-body.is-preload .banner.onload-image-fade-down .image img {
-  opacity: 0;
-}
-
-.banner.onload-image-fade-left .image {
-  -moz-transition: opacity 0.75s ease-in-out, -moz-transform 0.75s ease-in-out;
-  -webkit-transition: opacity 0.75s ease-in-out,
-    -webkit-transform 0.75s ease-in-out;
-  -ms-transition: opacity 0.75s ease-in-out, -ms-transform 0.75s ease-in-out;
-  transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
-}
-
-.banner.onload-image-fade-left .image img {
-  -moz-transition: opacity 0.75s ease-in-out;
-  -webkit-transition: opacity 0.75s ease-in-out;
-  -ms-transition: opacity 0.75s ease-in-out;
-  transition: opacity 0.75s ease-in-out;
-  -moz-transition-delay: 0.5625s;
-  -webkit-transition-delay: 0.5625s;
-  -ms-transition-delay: 0.5625s;
-  transition-delay: 0.5625s;
-}
-
-body.is-preload .banner.onload-image-fade-left .image {
-  -moz-transform: translateX(1rem);
-  -webkit-transform: translateX(1rem);
-  -ms-transform: translateX(1rem);
-  transform: translateX(1rem);
-  opacity: 0;
-}
-
-body.is-preload .banner.onload-image-fade-left .image img {
-  opacity: 0;
-}
-
-.banner.onload-image-fade-right .image {
-  -moz-transition: opacity 0.75s ease-in-out, -moz-transform 0.75s ease-in-out;
-  -webkit-transition: opacity 0.75s ease-in-out,
-    -webkit-transform 0.75s ease-in-out;
-  -ms-transition: opacity 0.75s ease-in-out, -ms-transform 0.75s ease-in-out;
-  transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
-}
-
-.banner.onload-image-fade-right .image img {
-  -moz-transition: opacity 0.75s ease-in-out;
-  -webkit-transition: opacity 0.75s ease-in-out;
-  -ms-transition: opacity 0.75s ease-in-out;
-  transition: opacity 0.75s ease-in-out;
-  -moz-transition-delay: 0.5625s;
-  -webkit-transition-delay: 0.5625s;
-  -ms-transition-delay: 0.5625s;
-  transition-delay: 0.5625s;
-}
-
-body.is-preload .banner.onload-image-fade-right .image {
-  -moz-transform: translateX(-1rem);
-  -webkit-transform: translateX(-1rem);
-  -ms-transform: translateX(-1rem);
-  transform: translateX(-1rem);
-  opacity: 0;
-}
-
-body.is-preload .banner.onload-image-fade-right .image img {
-  opacity: 0;
-}
-
-.banner.onload-image-fade-in .image img {
-  -moz-transition: opacity 0.75s ease-in-out;
-  -webkit-transition: opacity 0.75s ease-in-out;
-  -ms-transition: opacity 0.75s ease-in-out;
-  transition: opacity 0.75s ease-in-out;
-}
-
-body.is-preload .banner.onload-image-fade-in .image img {
-  opacity: 0;
-}
-
-.banner.onscroll-content-fade-up .content {
-  -moz-transition: opacity 0.75s ease-in-out, -moz-transform 0.75s ease-in-out;
-  -webkit-transition: opacity 0.75s ease-in-out,
-    -webkit-transform 0.75s ease-in-out;
-  -ms-transition: opacity 0.75s ease-in-out, -ms-transform 0.75s ease-in-out;
-  transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
-}
-
-.banner.onscroll-content-fade-up.is-inactive .content {
-  -moz-transform: translateY(1rem);
-  -webkit-transform: translateY(1rem);
-  -ms-transform: translateY(1rem);
-  transform: translateY(1rem);
-  opacity: 0;
-}
-
-.banner.onscroll-content-fade-down .content {
-  -moz-transition: opacity 0.75s ease-in-out, -moz-transform 0.75s ease-in-out;
-  -webkit-transition: opacity 0.75s ease-in-out,
-    -webkit-transform 0.75s ease-in-out;
-  -ms-transition: opacity 0.75s ease-in-out, -ms-transform 0.75s ease-in-out;
-  transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
-}
-
-.banner.onscroll-content-fade-down.is-inactive .content {
-  -moz-transform: translateY(-1rem);
-  -webkit-transform: translateY(-1rem);
-  -ms-transform: translateY(-1rem);
-  transform: translateY(-1rem);
-  opacity: 0;
-}
-
-.banner.onscroll-content-fade-left .content {
-  -moz-transition: opacity 0.75s ease-in-out, -moz-transform 0.75s ease-in-out;
-  -webkit-transition: opacity 0.75s ease-in-out,
-    -webkit-transform 0.75s ease-in-out;
-  -ms-transition: opacity 0.75s ease-in-out, -ms-transform 0.75s ease-in-out;
-  transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
-}
-
-.banner.onscroll-content-fade-left.is-inactive .content {
-  -moz-transform: translateX(1rem);
-  -webkit-transform: translateX(1rem);
-  -ms-transform: translateX(1rem);
-  transform: translateX(1rem);
-  opacity: 0;
-}
-
-.banner.onscroll-content-fade-right .content {
-  -moz-transition: opacity 0.75s ease-in-out, -moz-transform 0.75s ease-in-out;
-  -webkit-transition: opacity 0.75s ease-in-out,
-    -webkit-transform 0.75s ease-in-out;
-  -ms-transition: opacity 0.75s ease-in-out, -ms-transform 0.75s ease-in-out;
-  transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
-}
-
-.banner.onscroll-content-fade-right.is-inactive .content {
-  -moz-transform: translateX(-1rem);
-  -webkit-transform: translateX(-1rem);
-  -ms-transform: translateX(-1rem);
-  transform: translateX(-1rem);
-  opacity: 0;
-}
-
-.banner.onscroll-content-fade-in .content {
-  -moz-transition: opacity 0.75s ease-in-out;
-  -webkit-transition: opacity 0.75s ease-in-out;
-  -ms-transition: opacity 0.75s ease-in-out;
-  transition: opacity 0.75s ease-in-out;
-}
-
-.banner.onscroll-content-fade-in.is-inactive .content {
-  opacity: 0;
-}
-
-.banner.onscroll-image-fade-up .image {
-  -moz-transition: opacity 0.75s ease-in-out, -moz-transform 0.75s ease-in-out;
-  -webkit-transition: opacity 0.75s ease-in-out,
-    -webkit-transform 0.75s ease-in-out;
-  -ms-transition: opacity 0.75s ease-in-out, -ms-transform 0.75s ease-in-out;
-  transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
-}
-
-.banner.onscroll-image-fade-up .image img {
-  -moz-transition: opacity 0.75s ease-in-out;
-  -webkit-transition: opacity 0.75s ease-in-out;
-  -ms-transition: opacity 0.75s ease-in-out;
-  transition: opacity 0.75s ease-in-out;
-  -moz-transition-delay: 0.5625s;
-  -webkit-transition-delay: 0.5625s;
-  -ms-transition-delay: 0.5625s;
-  transition-delay: 0.5625s;
-}
-
-.banner.onscroll-image-fade-up.is-inactive .image {
-  -moz-transform: translateY(1rem);
-  -webkit-transform: translateY(1rem);
-  -ms-transform: translateY(1rem);
-  transform: translateY(1rem);
-  opacity: 0;
-}
-
-.banner.onscroll-image-fade-up.is-inactive .image img {
-  opacity: 0;
-}
-
-.banner.onscroll-image-fade-down .image {
-  -moz-transition: opacity 0.75s ease-in-out, -moz-transform 0.75s ease-in-out;
-  -webkit-transition: opacity 0.75s ease-in-out,
-    -webkit-transform 0.75s ease-in-out;
-  -ms-transition: opacity 0.75s ease-in-out, -ms-transform 0.75s ease-in-out;
-  transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
-}
-
-.banner.onscroll-image-fade-down .image img {
-  -moz-transition: opacity 0.75s ease-in-out;
-  -webkit-transition: opacity 0.75s ease-in-out;
-  -ms-transition: opacity 0.75s ease-in-out;
-  transition: opacity 0.75s ease-in-out;
-  -moz-transition-delay: 0.5625s;
-  -webkit-transition-delay: 0.5625s;
-  -ms-transition-delay: 0.5625s;
-  transition-delay: 0.5625s;
-}
-
-.banner.onscroll-image-fade-down.is-inactive .image {
-  -moz-transform: translateY(-1rem);
-  -webkit-transform: translateY(-1rem);
-  -ms-transform: translateY(-1rem);
-  transform: translateY(-1rem);
-  opacity: 0;
-}
-
-.banner.onscroll-image-fade-down.is-inactive .image img {
-  opacity: 0;
-}
-
-.banner.onscroll-image-fade-left .image {
-  -moz-transition: opacity 0.75s ease-in-out, -moz-transform 0.75s ease-in-out;
-  -webkit-transition: opacity 0.75s ease-in-out,
-    -webkit-transform 0.75s ease-in-out;
-  -ms-transition: opacity 0.75s ease-in-out, -ms-transform 0.75s ease-in-out;
-  transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
-}
-
-.banner.onscroll-image-fade-left .image img {
-  -moz-transition: opacity 0.75s ease-in-out;
-  -webkit-transition: opacity 0.75s ease-in-out;
-  -ms-transition: opacity 0.75s ease-in-out;
-  transition: opacity 0.75s ease-in-out;
-  -moz-transition-delay: 0.5625s;
-  -webkit-transition-delay: 0.5625s;
-  -ms-transition-delay: 0.5625s;
-  transition-delay: 0.5625s;
-}
-
-.banner.onscroll-image-fade-left.is-inactive .image {
-  -moz-transform: translateX(1rem);
-  -webkit-transform: translateX(1rem);
-  -ms-transform: translateX(1rem);
-  transform: translateX(1rem);
-  opacity: 0;
-}
-
-.banner.onscroll-image-fade-left.is-inactive .image img {
-  opacity: 0;
-}
-
-.banner.onscroll-image-fade-right .image {
-  -moz-transition: opacity 0.75s ease-in-out, -moz-transform 0.75s ease-in-out;
-  -webkit-transition: opacity 0.75s ease-in-out,
-    -webkit-transform 0.75s ease-in-out;
-  -ms-transition: opacity 0.75s ease-in-out, -ms-transform 0.75s ease-in-out;
-  transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
-}
-
-.banner.onscroll-image-fade-right .image img {
-  -moz-transition: opacity 0.75s ease-in-out;
-  -webkit-transition: opacity 0.75s ease-in-out;
-  -ms-transition: opacity 0.75s ease-in-out;
-  transition: opacity 0.75s ease-in-out;
-  -moz-transition-delay: 0.5625s;
-  -webkit-transition-delay: 0.5625s;
-  -ms-transition-delay: 0.5625s;
-  transition-delay: 0.5625s;
-}
-
-.banner.onscroll-image-fade-right.is-inactive .image {
-  -moz-transform: translateX(-1rem);
-  -webkit-transform: translateX(-1rem);
-  -ms-transform: translateX(-1rem);
-  transform: translateX(-1rem);
-  opacity: 0;
-}
-
-.banner.onscroll-image-fade-right.is-inactive .image img {
-  opacity: 0;
-}
-
-.banner.onscroll-image-fade-in .image img {
-  -moz-transition: opacity 0.75s ease-in-out;
-  -webkit-transition: opacity 0.75s ease-in-out;
-  -ms-transition: opacity 0.75s ease-in-out;
-  transition: opacity 0.75s ease-in-out;
-}
-
-.banner.onscroll-image-fade-in.is-inactive .image img {
-  opacity: 0;
-}
-
 /* Banner (style5) */
 
 .banner.style5 {
@@ -957,10 +550,10 @@ body.is-preload .banner.onload-image-fade-in .image img {
   object-position: center;
   display: block;
   position: absolute;
-  top: 0;
+  top: -64px;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 113%;
   border-radius: 0;
 }
 
@@ -986,6 +579,23 @@ body.is-preload .banner.onload-image-fade-in .image img {
   .banner.style5 {
     padding: 2.5rem 2rem 0.5rem 2rem;
   }
+  .banner.style5 .image img {
+    -moz-object-fit: cover;
+    -webkit-object-fit: cover;
+    -ms-object-fit: cover;
+    object-fit: cover;
+    -moz-object-position: center;
+    -webkit-object-position: center;
+    -ms-object-position: center;
+    object-position: center;
+    display: block;
+    position: absolute;
+    top: -34px;
+    left: 0;
+    width: 100%;
+    height: 113%;
+    border-radius: 0;
+  }
 }
 
 .banner.style5.fullscreen {
@@ -999,16 +609,209 @@ body.is-preload .banner.onload-image-fade-in .image img {
 .banner.style5.content-align-right {
   text-align: right;
 }
+.meet__line {
+  letter-spacing: 0.8px;
+  justify-content: center;
+  align-items: center;
+  max-width: 220px;
+}
 
-.banner.style5.image-position-left .image img {
-  -moz-object-position: left;
-  -webkit-object-position: left;
-  -ms-object-position: left;
-  object-position: left;
+* {
+  box-sizing: border-box;
 }
-.btn .btn-light .btn-lg {
-  width: 140px;
+
+.img-comp-container {
+  justify-content: center;
+  position: relative;
+  height: 900px; /*should be the same height as the images*/
 }
+
+.img-comp-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.img-comp-img img {
+  display: block;
+}
+
+.img-comp-slider {
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+
+  width: 40px;
+  height: 40px;
+  background-color: #2196f3;
+  opacity: 0.7;
+  border-radius: 50%;
+}
+.container_slider {
+  padding-top: 50px;
+}
+
 .layout {
   background-color: #027ccd;
+}
+
+.letter_ok {
+  padding-top: 300px;
+}
+.image_ok {
+  padding-top: 15px;
+}
+.about_feel {
+  padding-top: 5px;
+  font-weight: 300;
+}
+.about_app {
+  font-size: 13px;
+  padding-top: 30px;
+}
+.about_feel {
+  font-size: 13px;
+  padding-top: 10px;
+  text-align: center;
+  font-weight: 300;
+}
+.letter_app {
+  font-weight: 600;
+  font-size: 46px;
+  padding-bottom: 20px;
+}
+.container_app {
+  max-width: 740px;
+}
+.image_about {
+  padding-top: 30px;
+}
+.likable_about {
+  font-weight: 800;
+  font-size: 46px;
+  padding-bottom: 20px;
+}
+.container_likable {
+  max-width: 740px;
+}
+.padding_likable {
+  padding-bottom: 100px;
+}
+.letter_feel {
+  font-weight: 800;
+  font-size: 46px;
+  padding-bottom: 20px;
+}
+.container_feel {
+  max-width: 750px;
+}
+
+.footer_likable {
+  margin-top: 38px;
+  padding: 100px;
+  background-color: #002c49;
+  color: white;
+}
+.footer_likable a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+.footer_likable a:hover {
+  color: #c0e9ee;
+  text-decoration: none;
+}
+
+.container_footer {
+  padding-bottom: 40px;
+}
+
+.card {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 33px solid rgba(255, 255, 255, 0.13) !important;
+  border-radius: 0.25rem;
+  box-shadow: 36px 35px 120px 51px #86c0c80f;
+}
+
+.container_services {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.fa {
+  text-align: center;
+  font-size: 29px !important;
+  color: #027ccd;
+}
+.text_about {
+  padding-top: 83px;
+  line-height: 2.1;
+}
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba (255, 242, 65, 0.849);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(255, 242, 65, 0.849);
+    transform: translatey(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(255, 242, 65, 0.849);
+    transform: translatey(0px);
+  }
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(255, 238, 0);
+  box-sizing: border-box;
+  border: 5px white solid;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 5px 15px 0px rgba(255, 242, 65, 0.849);
+  transform: translatey(0px);
+  animation: float 3s ease-in-out infinite;
+}
+.download_apptext {
+  text-decoration: none;
+  color: #000000;
+}
+.download_apptextbottom {
+  text-decoration: none;
+  color: #fff;
+}
+.download_apptext > a {
+  color: #000000;
+}
+.download_apptext > a:hover {
+  color: #000000;
+}
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+  padding: 2rem;
+}
+
+#theslider {
+  overflow: hidden;
+}
+.navbar-light .navbar-toggler {
+  color: rgba(0, 0, 0, 0.55);
+  border-color: rgb(255, 255, 255) !important;
 }
