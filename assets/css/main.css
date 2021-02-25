@@ -812,6 +812,7 @@ nav.navbar {
 
 nav.navbar .navbar-nav .nav-link {
   color: var(--primary-color);
+  padding: 0.5rem 16px;
 }
 
 #theslider {
