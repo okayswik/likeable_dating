@@ -657,9 +657,6 @@ h6 {
   background-color: #027ccd;
 }
 
-.letter_ok {
-  padding-top: 300px;
-}
 .image_ok {
   padding-top: 15px;
 }
@@ -709,7 +706,7 @@ h6 {
 }
 
 .footer_likable {
-  margin-top: 38px;
+  /* margin-top: 38px; */
   padding: 100px;
   background-color: #002c49;
   color: white;
@@ -814,4 +811,32 @@ h6 {
 .navbar-light .navbar-toggler {
   color: rgba(0, 0, 0, 0.55);
   border-color: rgb(255, 255, 255) !important;
+}
+
+/* .about-likable */
+
+.about-likable {
+  width: 100%;
+}
+.about-likable > div > .row {
+  position: relative;
+}
+
+.about-likable .letter_ok {
+  /* padding-top: 300px; */
+  position: absolute;
+  width: auto;
+  right: 25%;
+  top: 30%;
+  transform: translateY(-50%);
+}
+
+.about-likable .image_ok img {
+  width: 100%;
+  height: auto;
+  transform: translateX(-160px);
+}
+
+.footer_likable {
+  clip-path: polygon(0px 0px, 88.82% -3.76%, 100% 10%, 100% 100%, 0px 100%);
 }
