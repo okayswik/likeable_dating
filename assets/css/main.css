@@ -92,7 +92,7 @@ video {
   vertical-align: baseline;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.5px;
-
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
