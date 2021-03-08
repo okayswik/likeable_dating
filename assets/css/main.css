@@ -123,7 +123,6 @@ ul {
 }
 section {
   padding-top: 50px;
-  padding-bottom: 50px;
 }
 
 blockquote,
@@ -521,7 +520,7 @@ h6 {
   margin-bottom: 2rem;
   z-index: 1;
   font-size: 70px;
-  font-weight: 800;
+  font-weight: 600;
   color: #eeeeee;
 }
 
@@ -679,7 +678,7 @@ h6 {
   font-weight: 300;
 }
 .letter_app {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 46px;
   padding-bottom: 20px;
 }
@@ -690,7 +689,7 @@ h6 {
   padding-top: 30px;
 }
 .likable_about {
-  font-weight: 800;
+  font-weight: 500;
   font-size: 46px;
   padding-bottom: 20px;
 }
@@ -701,7 +700,7 @@ h6 {
   padding-bottom: 100px;
 }
 .letter_feel {
-  font-weight: 800;
+  font-weight: 500;
   font-size: 46px;
   padding-bottom: 20px;
 }
@@ -744,7 +743,7 @@ h6 {
 }
 
 .container_services {
-  padding-top: 70px;
+  padding-top: 30px;
   padding-bottom: 70px;
 }
 .fa {
@@ -773,6 +772,8 @@ h6 {
 }
 
 .avatar {
+  margin-top: 50px;
+  margin-left: 60px;
   width: 50px;
   height: 50px;
   background-color: rgb(255, 238, 0);
@@ -799,15 +800,10 @@ h6 {
   color: #000000;
 }
 nav.navbar {
-  /* position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between; */
   padding: 18px 0;
   font-size: 16px;
   color: var(--primary-color);
-  font-weight: 500px;
+  font-weight: 300;
 }
 
 nav.navbar .navbar-nav .nav-link {
@@ -850,4 +846,10 @@ nav.navbar .navbar-nav .nav-link {
 
 .footer_likable {
   clip-path: polygon(0px 0px, 88.82% -3.76%, 100% 10%, 100% 100%, 0px 100%);
+}
+#services {
+  justify-content: center;
+}
+.container_services {
+  text-align: center;
 }
