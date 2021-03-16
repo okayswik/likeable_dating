@@ -12,6 +12,10 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 
 	<!-- responsive.css -->
 	<noscript>
@@ -22,6 +26,11 @@
 </head>
 
 <body style="background: white;">
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-up-short" viewBox="0 0 16 16">
+		<path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"/>
+	  </svg></button>
+
+
 	<!-- Wrapper -->
 	<!-- header tag -->
 	<header>
@@ -62,6 +71,7 @@
 
 	   <div class="banner style5">
 		<div style="justify-content: center;" class="content">
+			
 			<h1 style="font-weight: 800">
 				Dating, the way it's <br />
 				meant to be
@@ -85,7 +95,7 @@
 
 
 
-
+	
 
 	<!-- feel -->
 	<section id="feel-card">
@@ -97,106 +107,250 @@
 
 		</div>
 		</div>
-		<div style="max-width: 950px;" class="container container_feel">
-			<div class="row row-cols-4 row-cols-sm-4 ">
-				<div class="col">
-					<div style="border:none;" class="card_feel">
+		<div style="max-width: 1140px;" class="container container_feel">
+		<div class="row row-cols-4 row-cols-sm-4  ">
+			<div class="col-3 ">
+				<div class="card h-10 justify-content-center omg">
+					<div style="border:none;" class="card_feel ">
 						
-						<img src="images/illustration1.svg" class="card-img-top" alt="..." />
+						<img id="imgimgimg" src="images/illustration1.svg" class="card-img-top" alt="..." />
 
 					</div>
-				</div>
-				<div class="col">
-					<div style="border:none;" class="card_feel">
-						<img src="images/illustration2.svg" class="card-img-top" alt="..." />
 
-					</div>
-				</div>
-				<div class="col">
-					<div style="border:none;" class="card_feel">
-						<img src="images/illustration3.svg" class="card-img-top" alt="..." />
-
-					</div>
-				</div>
-				<div class="col">
-					<div style="border:none;" class="card_feel">
-						<img src="images/illustration4.svg" class="card-img-top" alt="..." />
-
+					<div class="card-body">
+						<h6 class="card-title">Movie Nights</h6>
 					</div>
 				</div>
 			</div>
+			<div class="col-3">
+				<div class="card h-100  omg">
+					<div style="border:none;" class="card_feel">
+						<img id="imgimgimg" src="images/illustration2.svg" class="card-img-top" alt="..." />
 
-			<div class="row align-items-start about_feel">
-				<div class="col">
-					Movie nights
-				</div>
-				<div class="col">
-					Night out
-				</div>
-				<div class="col">
-					Quiet time
-				</div>
-				<div class="col">
-					Out of the ordinary
+					</div>
+
+					<div class="card-body">
+						<h6 class="card-title">Night out</h6>
+					</div>
 				</div>
 			</div>
+			<div class="col-3">
+				<div class="card h-100  omg">
+					<div style="border:none;" class="card_feel">
+						<img id="imgimgimg" src="images/illustration3.svg" class="card-img-top" alt="..." />
 
+					</div>
+
+
+					<div class="card-body">
+						<h6 class="card-title">Quiet time</h6>
+					</div>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="card h-100 omg">
+					<div style="border:none;" class="card_feel">
+						<img id="imgimgimg" src="images/illustration4.svg" class="card-img-top" alt="..." />
+
+					</div>
+
+					<div class="card-body">
+						<h6 class="card-title">Out of the ordinary</h6>
+					</div>
+				</div>
+			</div>
 		</div>
+	</div>
 	</section>
+
+
+	<!-- feel card Mobile -->
+	<section id="feelcard_mobile"
+	>
+	<h2 class=" d-flex justify-content-center text-center letter_feel">
+		What do you feel like?
+	</h2>
+	<br>
+	<div  id="carouselExampleFade" class="carousel slide carousel-fade feel_card"
+		data-bs-ride="carousel">
+		
+		<ol class="carousel-indicators">
+			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="1" ></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+			
+		</ol>
+		<div class="carousel-inner">
+			<div class="carousel-item active ">
+				<div class="panel panel-default text-center">
+					<article>
+						<div class="caption" style=" display: flex; flex-direction: column;">
+							<div class="card h-10 justify-content-center omg">
+								<div style="border:none;" class="card_feel ">
+									
+									<img id="imgmobile" src="images/illustration1.svg" class="card-img-top" alt="..." />
+			
+								</div>
+			
+								<div class="card-body">
+									<h6 class="card-title">Movie Nights</h6>
+								</div>
+							</div>
+							
+							
+						</div>
+						
+
+					</article>
+					
+				</div>
+				
+			</div>
+			<div class="carousel-item ">
+				<div class="panel panel-default text-center">
+					<article>
+						<div class="caption" style=" display: flex; flex-direction: column;">
+							<div class="card h-100  omg">
+								<div style="border:none;" class="card_feel">
+									<img id="imgimgimg" src="images/illustration3.svg" class="card-img-top" alt="..." />
+			
+								</div>
+			
+			
+								<div class="card-body">
+									<h6 class="card-title">Quiet time</h6>
+								</div>
+							</div>
+							
+						</div>
+						
+
+					</article>
+					
+				</div>
+			</div>
+			<div class="carousel-item">
+				<div class="panel panel-default text-center">
+					<article>
+						<div class="caption" style=" display: flex; flex-direction: column;">
+							<div class="card h-100  omg">
+								<div style="border:none;" class="card_feel">
+									<img id="imgmobile" src="images/illustration2.svg" class="card-img-top" alt="..." />
+			
+								</div>
+			
+								<div class="card-body">
+									<h6 class="card-title">Night out</h6>
+								</div>
+							</div>
+							
+							
+						</div>
+						
+
+					</article>
+					
+				</div>
+			</div>
+			<div class="carousel-item">
+				<div class="panel panel-default text-center">
+					<article>
+						<div class="caption" style=" display: flex; flex-direction: column;">
+							<div class="card h-100 omg">
+								<div style="border:none;" class="card_feel">
+									<img id="imgmobile"src="images/illustration4.svg" class="card-img-top" alt="..." />
+			
+								</div>
+			
+								<div class="card-body">
+									<h6 class="card-title">Out of the ordinary</h6>
+								</div>
+							</div>
+							
+							
+						</div>
+						
+
+					</article>
+					
+				</div>
+			</div>
+		</div>
+
+	</div>
+</section>
 
 
 	<!-- app-view -->
 	<section id="app-view">
 		<div style="max-width: 950px;" style="overflow: hidden;" class="container">
+
+			<div id="left_motion" class="animate__animated animate__slideInLeft animate__delay-2s">
+				<img class="left_feature"src="images/left-feature.png">
+			</div>
 			<div>
-				<img src="images/illustration6.png" style="width: 100%; height: 100%;" alt="" />
+				<img src="images/illustrationonly6.png" style="width: 100%; height: 100%;" alt="" />
+			</div>
+			<div id="right_motion" class="animate__animated animate__slideInRight animate__delay-2s">
+				<img class="right_feature" src="images/right-feature.png">
 			</div>
 		</div>
 
+		
+
 	</section>
+	
+
+
+
+
+
 
 	<!-- about likable -->
 	<section id="about-likable" class="padding_likable">
-		<div style="max-width: 950px;" class="container container_likable">
+		<div style="max-width: 1000px;" class="container container_likable">
 			<div class=" d-flex justify-content-center text-center">
 				<h2 class="likable_about">
 					What is Likeable Dating?
 				</h2>
 			</div>
-			<div class="container">
+			<div  class="container">
 				<div class="row">
-					<div class="col-sm text_about">
-						<ul>
-							<li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue"
-									class="bi bi-dot" viewBox="0 0 16 16">
-									<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
-								</svg>Get away <strong>from swiping</strong></li>
-							<li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red"
-									class="bi bi-dot" viewBox="0 0 16 16">
-									<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
-								</svg>Get out there, like <strong>it's meant to be!</strong></li>
-							<li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue"
-									class="bi bi-dot" viewBox="0 0 16 16">
-									<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
-								</svg>Likeable Dating is <strong>match and event based! <br> <svg
-										xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="transparent"
+						<div class="col-sm text_about">
+							<ul>
+								<li><svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="#0788db"
 										class="bi bi-dot" viewBox="0 0 16 16">
-										<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" /> </strong> Choose the
-								way which suits you!</li>
-							<li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red"
-									class="bi bi-dot" viewBox="0 0 16 16">
-									<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
-								</svg><strong>Verified profiles</strong> at your fingertips</li>
-							<li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue"
-									class="bi bi-dot" viewBox="0 0 16 16">
-									<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
-								</svg><strong>Refreshing and evergrowing</strong> services</li>
-							<li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red"
-									class="bi bi-dot" viewBox="0 0 16 16">
-									<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
-								</svg>The <strong>one app to rule them all</strong>... we hope! </li>
-						</ul>
-					</div>
+										<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+									</svg>Get away <strong>from swiping</strong></li>
+								<li><svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="#e5003b"
+										class="bi bi-dot" viewBox="0 0 16 16">
+										<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+									</svg>Get out there, like <strong>it's meant to be!</strong></li>
+								<li><svg xmlns="http://www.w3.org/2000/svg" width="46" height="46"fill="#0788db"
+										class="bi bi-dot" viewBox="0 0 16 16">
+										<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+									</svg>Likeable Dating is <strong>match and event based! <br> <svg
+											xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="transparent"
+											class="bi bi-dot" viewBox="0 0 16 16">
+											<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" /> </strong> Choose the
+									way which suits you!</li>
+								<li><svg xmlns="http://www.w3.org/2000/svg" width="46" height="46"fill="#e5003b"
+										class="bi bi-dot" viewBox="0 0 16 16">
+										<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+									</svg><strong>Verified profiles</strong> at your fingertips</li>
+								<li><svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="#0788db"
+										class="bi bi-dot" viewBox="0 0 16 16">
+										<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+									</svg><strong>Refreshing and evergrowing</strong> services</li>
+								<li><svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="#e5003b"
+										class="bi bi-dot" viewBox="0 0 16 16">
+										<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+									</svg>The <strong>one app to rule them all</strong>... we hope! </li>
+							</ul>
+						</div>
+
+					
 
 					<div class="col-sm image_about">
 						<image>
@@ -210,20 +364,24 @@
 		</div>
 	</section>
 
+	
+
+	
+
 
 	<!-- services -->
 	<section id="services">
 		<div class=" d-flex justify-content-center">
-			<h2 style="font-weight: 500; font-size: 46px; padding-bottom: 20px;">
+			<h2 class="our_services">
 				Our Services
 			</h2>
 		</div>
 
-		<div style="max-width: 940px;" class=" container container_services ">
-			<div class="row row-cols-2 row-cols-lg-3 g-3 ">
-				<div class="col ">
-					<div class="card h-10 justify-content-center ">
-						<i class="fa fa-glass" aria-hidden="true"></i>
+		<div style="max-width: 1140px;" class=" container container_services ">
+			<div class="row row-cols-2 row-cols-3 g-4 ">
+				<div class="col">
+					<div class="card h-10  ">
+						<img class="imgimg" src="images/service-icon-1.png" />
 
 						<div class="card-body">
 							<h6 class="card-title">Lets Hangout Tonight!</h6>
@@ -232,7 +390,7 @@
 				</div>
 				<div class="col">
 					<div class="card h-100">
-						<i class="fa fa-video-camera" aria-hidden="true"></i>
+						<img class="imgimg" src="images/service-icon-2.png" />
 
 						<div class="card-body">
 							<h6 class="card-title">Causal streams</h6>
@@ -241,7 +399,7 @@
 				</div>
 				<div class="col">
 					<div class="card h-100">
-						<i class="fa fa-video-camera" aria-hidden="true"></i>
+						<img class="imgimg" src="images/service-icon-3.png" />
 
 
 						<div class="card-body">
@@ -251,7 +409,7 @@
 				</div>
 				<div class="col">
 					<div class="card h-100">
-						<i class="fa fa-users" aria-hidden="true"></i>
+						<img class="imgimg" src="images/service-icon-4.png" />
 
 						<div class="card-body">
 							<h6 class="card-title">Group dates</h6>
@@ -260,7 +418,7 @@
 				</div>
 				<div class="col">
 					<div class="card h-100">
-						<i class="fa fa-video-camera" aria-hidden="true"></i>
+						<img class="imgimg" src="images/service-icon-5.png" />
 
 
 						<div class="card-body">
@@ -270,7 +428,7 @@
 				</div>
 				<div class="col">
 					<div class="card h-100">
-						<i class="fa fa-search" aria-hidden="true"></i>
+						<img class="imgimg" src="images/service-icon-6.png" />
 
 						<div class="card-body">
 							<h6 class="card-title">Matches</h6>
@@ -282,6 +440,157 @@
 		</div>
 
 	</section>
+	<!-- mobile view for  -->
+	<section id="featuresMobile"
+	>
+	<h2 class="our_services">
+		Our Services
+	</h2>
+	<br>
+	<div  id="carouselExampleFade" class="carousel slide carousel-fade"
+		data-bs-ride="carousel">
+		
+		<ol class="carousel-indicators">
+			<li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="carousel-item ">
+				<div class="panel panel-default text-center">
+					<article>
+						<div class="caption" style=" display: flex; flex-direction: column;">
+							<div class="card h-100">
+								<img class="imgimg" src="images/service-icon-6.png" />
+		
+								<div class="card-body">
+									<h6 class="card-title">Matches</h6>
+								</div>
+							</div>
+							
+							
+						</div>
+						
+
+					</article>
+					
+				</div>
+				
+			</div>
+			<div class="carousel-item active">
+				<div class="panel panel-default text-center">
+					<article>
+						<div class="caption" style=" display: flex; flex-direction: column;">
+							<div class="card h-10  ">
+								<img class="imgimg" src="images/service-icon-1.png" />
+		
+								<div class="card-body">
+									<h6 class="card-title">Lets Hangout Tonight!</h6>
+								</div>
+							</div>
+							
+						</div>
+						
+
+					</article>
+					
+				</div>
+			</div>
+			<div class="carousel-item">
+				<div class="panel panel-default text-center">
+					<article>
+						<div class="caption" style=" display: flex; flex-direction: column;">
+							<div class="card h-100">
+								<img class="imgimg" src="images/service-icon-2.png" />
+		
+								<div class="card-body">
+									<h6 class="card-title">Causal streams</h6>
+								</div>
+							</div>
+							
+							
+						</div>
+						
+
+					</article>
+					
+				</div>
+			</div>
+			<div class="carousel-item">
+				<div class="panel panel-default text-center">
+					<article>
+						<div class="caption" style=" display: flex; flex-direction: column;">
+							<div class="card h-100">
+								<img class="imgimg" src="images/service-icon-3.png" />
+		
+		
+								<div class="card-body">
+									<h6 class="card-title">Blind dates</h6>
+								</div>
+							</div>
+							
+							
+						</div>
+						
+
+					</article>
+					
+				</div>
+			</div>
+			<div class="carousel-item">
+				<div class="panel panel-default text-center">
+					<article>
+						<div class="caption" style=" display: flex; flex-direction: column;">
+							<div class="card h-100">
+								<img class="imgimg" src="images/service-icon-4.png" />
+		
+								<div class="card-body">
+									<h6 class="card-title">Group dates</h6>
+								</div>
+							</div>
+							
+							
+						</div>
+						
+
+					</article>
+					
+				</div>
+			</div>
+			<div class="carousel-item">
+				<div class="panel panel-default text-center">
+					<article>
+						<div class="caption" style=" display: flex; flex-direction: column;">
+							<div class="card h-100">
+								<img class="imgimg" src="images/service-icon-5.png" />
+		
+		
+								<div class="card-body">
+									<h6 class="card-title">Events</h6>
+								</div>
+							</div>
+							
+							
+						</div>
+						
+
+					</article>
+					
+				</div>
+			</div>
+			
+			
+			
+			
+
+		</div>
+
+	</div>
+</section>
+
 
 
 
@@ -524,6 +833,28 @@
 		/*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/
 		initComparisons();
 	</script>
+	<script>
+		//Get the button
+		var mybutton = document.getElementById("myBtn");
+		
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+		
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			mybutton.style.display = "block";
+		  } else {
+			mybutton.style.display = "none";
+		  }
+		}
+		
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0;
+		  document.documentElement.scrollTop = 0;
+		}
+		</script>
+
 
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.scrollex.min.js"></script>
