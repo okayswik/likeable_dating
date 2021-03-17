@@ -26,18 +26,20 @@
 </head>
 
 <body style="background: white;">
+	<!-- go to top -->
 	<button onclick="topFunction()" id="myBtn" title="Go to top"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-up-short" viewBox="0 0 16 16">
 		<path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"/>
 	  </svg></button>
 
 
 	<!-- Wrapper -->
+
 	<!-- header tag -->
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-light">
 			<div style="max-width: 950px;"class="container">
 				<a class="navbar-brand" href="#">
-					<img src="images/logo.svg" alt="" width="100%" height="100%">
+					<img src="images/likeable.png" alt="" width="60%" height="100%">
 				</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 					data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false"
@@ -47,16 +49,26 @@
 				<div class="collapse navbar-collapse" id="navbarToggler">
 					<ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
 						<li class="nav-item">
-							<a  class="nav-link" href="#">Services</a>
+							<a  class="nav-link" href="#our_services">Services</a>
 						</li>
 						<li class="nav-item">
 							<a  class="nav-link" href="#"> Prices </a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#"> About us </a>
+							<a class="nav-link" href="#"> About Us </a>
 						</li>
 						<li class="nav-item">
-							<a  class="nav-link" href="#">Contact </a>
+							<!-- <a  class="nav-link" href="#">Contact </a> -->
+								<!-- Button trigger modal -->
+							<button type="button" class="contact_btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+								
+								  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#f38ba5" class="bi bi-chat-text" viewBox="0 0 16 16">
+									<path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"/>
+									<path d="M4 5.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zM4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8zm0 2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5z"/>
+								  </svg>
+								  
+							  </button>
+
 						</li>
 					</ul>
 
@@ -67,47 +79,67 @@
 
 
 	<!-- hero -->
-
-
-	   <div class="banner style5">
-		<div style="justify-content: center;" class="content">
-			
-			<h1 style="font-weight: 800">
-				Dating, the way it's <br />
-				meant to be
-			</h1>
-
-			<div class="col-auto">
-				<button style="font-size: 14px; width:200px; padding:10px; border-radius: 5px;" type="button"
-					class="btn btn-light ">
-					<img style=" padding-right:10px" width="35" height="35" src="images/appstored.svg" /><a
-						class="download_apptext" href="#" target="_blank">Download app</a><img
-						style=" padding-left:10px" width="35" height="35" src="images/playmarketd.svg" />
-				</button>
-			</div>
-		</div>
-		<div class="image">
-			<img src="images/Hero-image-min.png" alt="" />
-		</div>
-	</div>
-
-
-
-
-
 	
+		<div class="banner style5">
+			<div style="justify-content: center;" class="content">
+				
+				<h1 style="font-weight: 800">
+					
+					The Likeable Experience - Explore Matches and Enjoy Events
+				</h1>
+	
+				<div class="col-auto">
+					<button style="font-size: 14px; width:200px; padding:10px; border-radius: 5px;" type="button"
+						class="btn btn-light ">
+						<img style=" padding-right:10px" width="35" height="35" src="images/appstored.svg" /><a
+							class="download_apptext" href="#" target="_blank">Download app</a><img
+							style=" padding-left:10px" width="35" height="35" src="images/playmarketd.svg" />
+					</button>
+				</div>
+			</div>
+			<div class="image">
+				<img src="images/Hero-image-min.png" alt="" />
+			</div>
+		</div> 
+	
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">Drop Us A Line</h5>
+		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body">
+			<div class="mb-3">
+				
+				<label for="exampleFormControlInput1" class="form-label"></label>
+				<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+			  </div>
+			  <div class="mb-3">
+				<label for="exampleFormControlTextarea1" class="form-label"></label>
+				<textarea class="form-control" id="exampleFormControlTextarea1" placeholder=" Write Your Message Here.." rows="3"></textarea>
+			  </div>
+		  <button type="button" class="send_messagebtn">Send</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+		
+
 
 	<!-- feel -->
 	<section id="feel-card">
 		<div class="d-flex justify-content-center text-center ">
 			<h2 class="letter_feel">
-				What do you feel like?
+				What Do You Feel Like?
 			</h2>
 
 
 		</div>
 		</div>
-		<div style="max-width: 1140px;" class="container container_feel">
+		<div  class="container container_feel">
 		<div class="row row-cols-4 row-cols-sm-4  ">
 			<div class="col-3 ">
 				<div class="card h-10 justify-content-center omg">
@@ -130,7 +162,7 @@
 					</div>
 
 					<div class="card-body">
-						<h6 class="card-title">Night out</h6>
+						<h6 class="card-title">Lights, Music and Dance!</h6>
 					</div>
 				</div>
 			</div>
@@ -143,7 +175,7 @@
 
 
 					<div class="card-body">
-						<h6 class="card-title">Quiet time</h6>
+						<h6 class="card-title">Quiet Time</h6>
 					</div>
 				</div>
 			</div>
@@ -155,7 +187,7 @@
 					</div>
 
 					<div class="card-body">
-						<h6 class="card-title">Out of the ordinary</h6>
+						<h6 class="card-title">Create Your Own Adventure</h6>
 					</div>
 				</div>
 			</div>
@@ -168,7 +200,7 @@
 	<section id="feelcard_mobile"
 	>
 	<h2 class=" d-flex justify-content-center text-center letter_feel">
-		What do you feel like?
+		What Do You Feel Like?
 	</h2>
 	<br>
 	<div  id="carouselExampleFade" class="carousel slide carousel-fade feel_card"
@@ -219,7 +251,7 @@
 			
 			
 								<div class="card-body">
-									<h6 class="card-title">Quiet time</h6>
+									<h6 class="card-title">Quiet Time</h6>
 								</div>
 							</div>
 							
@@ -241,7 +273,7 @@
 								</div>
 			
 								<div class="card-body">
-									<h6 class="card-title">Night out</h6>
+									<h6 class="card-title">Night Out</h6>
 								</div>
 							</div>
 							
@@ -264,7 +296,7 @@
 								</div>
 			
 								<div class="card-body">
-									<h6 class="card-title">Out of the ordinary</h6>
+									<h6 class="card-title">Out Of The Ordinary</h6>
 								</div>
 							</div>
 							
@@ -282,17 +314,19 @@
 </section>
 
 
+
+
 	<!-- app-view -->
 	<section id="app-view">
-		<div style="max-width: 950px;" style="overflow: hidden;" class="container">
+		<div style="max-width: 1150px;" style="overflow: hidden;" class="container">
 
-			<div id="left_motion" class="animate__animated animate__slideInLeft animate__delay-2s">
+			<div id="left_motion" class=" animate__animated animate__fadeInLeft animate__delay-1s" >
 				<img class="left_feature"src="images/left-feature.png">
 			</div>
 			<div>
 				<img src="images/illustrationonly6.png" style="width: 100%; height: 100%;" alt="" />
 			</div>
-			<div id="right_motion" class="animate__animated animate__slideInRight animate__delay-2s">
+			<div id="right_motion" class="animate__animated animate__fadeInRight animate__delay-1s ">
 				<img class="right_feature" src="images/right-feature.png">
 			</div>
 		</div>
@@ -300,19 +334,23 @@
 		
 
 	</section>
+
+		<!-- app-view mobile -->
+	<section id="app-view_mobile">
+		<div style="max-width: 1150px;" style="overflow: hidden;" class="container">
+			<img src="/images/illustration6.png" width="100%" height="auto"/>
+		</div>
+	</section>
 	
-
-
-
 
 
 
 	<!-- about likable -->
 	<section id="about-likable" class="padding_likable">
-		<div style="max-width: 1000px;" class="container container_likable">
+		<div class="container container_likable">
 			<div class=" d-flex justify-content-center text-center">
 				<h2 class="likable_about">
-					What is Likeable Dating?
+					What is <img src="images/likeable.png" alt="" width="50%" height="auto">?
 				</h2>
 			</div>
 			<div  class="container">
@@ -367,7 +405,7 @@
 	
 
 	
-
+<span id="our_services"></span>
 
 	<!-- services -->
 	<section id="services">
@@ -377,7 +415,7 @@
 			</h2>
 		</div>
 
-		<div style="max-width: 1140px;" class=" container container_services ">
+		<div class=" container container_services ">
 			<div class="row row-cols-2 row-cols-3 g-4 ">
 				<div class="col">
 					<div class="card h-10  ">
@@ -393,7 +431,7 @@
 						<img class="imgimg" src="images/service-icon-2.png" />
 
 						<div class="card-body">
-							<h6 class="card-title">Causal streams</h6>
+							<h6 class="card-title">Causal Streams</h6>
 						</div>
 					</div>
 				</div>
@@ -403,7 +441,7 @@
 
 
 						<div class="card-body">
-							<h6 class="card-title">Blind dates</h6>
+							<h6 class="card-title">Blind Dates</h6>
 						</div>
 					</div>
 				</div>
@@ -412,7 +450,7 @@
 						<img class="imgimg" src="images/service-icon-4.png" />
 
 						<div class="card-body">
-							<h6 class="card-title">Group dates</h6>
+							<h6 class="card-title">Group Dates</h6>
 						</div>
 					</div>
 				</div>
@@ -598,11 +636,11 @@
 		<div style="max-width: 950px;" class="container container_app">
 			<div class=" d-flex justify-content-center text-center">
 				<h2 class="letter_app">
-					Make Likeable Dating the app you <br> want it to be!
+					Make Likeable the app you <br> want it to be!
 				</h2>
 			</div>
 
-			<div>
+			<div class="make_image">
 				<img src="images/illustration7.svg" style="width: 100%; height: 100%;" alt="" />
 			</div>
 
@@ -631,22 +669,25 @@
 
 
 	<!-- slider -->
-	<!-- <section id="theslider">
+	<section id="theslider">
 		<div class="layout">
 			<div class="container container_slider">
-				<div class=" d-flex justify-content-center text-center">
+				<div class=" justify-content-center text-center">
 					<h1>Simple layout at your finger tips</h1>
 				</div>
+				
 
 
 				<div class="img-comp-container">
 
 					<div class="img-comp-img">
 
-						<img src="images/illustration8.svg" width="800" height="800">
+						<img src="images/black-app.png" width="800" height="800">
+					
 					</div>
 					<div class="img-comp-img img-comp-overlay">
-						<img src="images/illustration8.svg" width="800" height="800">
+						<img src="images/white-app.png" width="800" height="800">
+						
 					</div>
 
 				</div>
@@ -659,7 +700,8 @@
 			</div>
 		</div>
 
-	</section> -->
+	</section>
+	
 
 
 
@@ -668,10 +710,6 @@
 
 	<div id="about-likable" class="about-likable">
 		<div>
-			
-
-				<!-- <div class="avatar">
-				</div> -->
 
 				<div class="row">
 					<div class="col image_ok">
@@ -682,8 +720,7 @@
 
 					<div class="col letter_ok">
 						<h6 class="meet__line">
-							Meet new people, hang out, go on dates, from friendships or
-							relationship.
+							Friendships to relationships all under the one app, start the Likeable experience. Download and Subscribe.
 						</h6>
 						<div>
 							<button
@@ -715,7 +752,6 @@
 								<div> <a href="#">Services</a></div>
 								<div><a href="#">Prices</a></div>
 								<div><a href="#">About us</a></div>
-
 							</div>
 							<div class="col-lg-2">
 								<div>
@@ -725,25 +761,14 @@
 									<a href="#">Terms and Conditions </a>
 								</div>
 								<div>
-									<a href="#">Contact</a>
+									<a href="#"  data-bs-toggle="modal" data-bs-target="#exampleModal">Contact</a>
 								</div>
-
-
-
 							</div>
 						</div>
-
 					</div>
 				</div>
-
-
 			</div>
-
-
 		</div>
-
-
-
 	</div>
 
 	<!-- Scripts -->
@@ -854,8 +879,6 @@
 		  document.documentElement.scrollTop = 0;
 		}
 		</script>
-
-
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.scrollex.min.js"></script>
 	<script src="assets/js/jquery.scrolly.min.js"></script>

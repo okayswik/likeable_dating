@@ -494,7 +494,7 @@ h6 {
 /* Banner (style5) */
 
 .banner.style5 {
-  padding: 7rem 7rem 5rem 7rem;
+  padding: 7rem 7rem 2rem 7rem;
   -moz-align-items: center;
   -webkit-align-items: center;
   -ms-align-items: center;
@@ -535,8 +535,8 @@ h6 {
   flex-shrink: 0;
   position: absolute;
   width: 100%;
-  height: 100%;
-  top: 0;
+  height: 70%;
+  top: 10;
   left: 0;
   border-radius: 0;
   opacity: 15;
@@ -624,9 +624,11 @@ h6 {
 }
 
 .img-comp-container {
-  justify-content: center;
   position: relative;
-  height: 900px; /*should be the same height as the images*/
+  height: 800px; /*should be the same height as the images*/
+  max-width: 800px;
+  margin: auto;
+  overflow: visible;
 }
 
 .img-comp-img {
@@ -645,13 +647,16 @@ h6 {
   z-index: 9;
   cursor: ew-resize;
   /*set the appearance of the slider:*/
-
-  width: 40px;
-  height: 40px;
-  background-color: #2196f3;
-  opacity: 0.7;
+  margin: 2px;
+  width: 60px;
+  height: 60px;
+  opacity: 1;
   border-radius: 50%;
+  box-shadow: 0 0 0 6px rgb(0 0 0 / 20%), 0 0 10px rgb(0 0 0 / 7%),
+    inset 0 1px 0 rgb(255 255 255 / 30%);
+  background: #ffffff url(/images/cd-arrows.png) no-repeat center center;
 }
+
 .container_slider {
   padding-top: 50px;
 }
@@ -684,6 +689,7 @@ h6 {
 }
 .container_app {
   max-width: 740px;
+  padding-bottom: 30px;
 }
 .image_about {
   padding-top: 30px;
@@ -694,7 +700,7 @@ h6 {
   padding-bottom: 20px;
 }
 .container_likable {
-  max-width: 740px;
+  max-width: 1000px;
 }
 .padding_likable {
   padding-bottom: 100px;
@@ -827,6 +833,7 @@ nav.navbar {
   font-size: 17px;
   color: var(--primary-color);
   font-weight: 500;
+  padding-top: 38px;
 }
 
 nav.navbar .navbar-nav .nav-link {
@@ -872,19 +879,29 @@ nav.navbar .navbar-nav .nav-link {
 
 .container_services {
   text-align: center;
+  padding-bottom: 40px;
+  padding-top: 30px;
+  max-width: 1140px;
 }
 
 /* okayy */
-#app_view {
+#app-view .container {
   position: relative;
 }
 
+#left_motion,
 #right_motion {
-  top: 65%;
+  position: absolute;
+  top: calc(66% - 190px);
+}
+
+#right_motion {
   width: 216px;
+  right: 10%;
 }
 #left_motion {
-  top: 65%;
+  width: 216px;
+  left: 10%;
 }
 
 .right_feature {
@@ -967,6 +984,32 @@ nav.navbar .navbar-nav .nav-link {
   }
 }
 
+@media screen and (max-width: 1680px) {
+  #app-view_mobile {
+    display: none;
+    cursor: grab;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #app-view_mobile {
+    display: contents;
+    cursor: grab;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #app-view {
+    display: none;
+    cursor: grab;
+  }
+}
+
+#services {
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
 .panel {
   border: 2px solid #e3e1e1;
   border-radius: 20px;
@@ -1047,4 +1090,34 @@ nav.navbar .navbar-nav .nav-link {
 }
 #imgmobile {
   width: 200px !important;
+}
+.contact_btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.contact_btn:hover {
+  border: none;
+  text-decoration-color: none;
+  outline: none;
+}
+.contact_btn:active {
+  text-decoration: none !important;
+  outline: none;
+}
+.send_messagebtn {
+  justify-content: left;
+  background-color: #e5003b;
+  color: #ffffff;
+  border: none;
+  font-size: 16px;
+  width: 150px;
+  height: 44px;
+  border-radius: 10px;
+}
+.modal-title {
+  font-size: 20px;
+}
+.make_image {
+  padding-top: 30px;
 }
