@@ -646,7 +646,7 @@ h6 {
   z-index: 9;
   cursor: ew-resize;
   /*set the appearance of the slider:*/
-  margin: 2px;
+
   width: 33px;
   padding: 15px;
   height: 33px;
@@ -701,11 +701,9 @@ h6 {
   padding-bottom: 20px;
 }
 .container_likable {
-  max-width: 1000px;
+  max-width: 1050px !important;
 }
-.padding_likable {
-  padding-top: 60px;
-}
+
 .letter_feel {
   font-weight: 500;
   font-size: 46px;
@@ -735,7 +733,7 @@ h6 {
 }
 
 .card {
-  box-shadow: 0 0 50px #0687e217;
+  box-shadow: 0 0 20px #b7d7ee3f;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -780,9 +778,20 @@ h6 {
   font-size: 29px !important;
   color: #027ccd;
 }
+
 .text_about {
-  padding-top: 80px;
-  line-height: 0.1;
+  padding-top: 60px;
+  text-align: left;
+}
+.footer_iconsright {
+  height: 23px;
+  width: 23px;
+  padding-right: 5px;
+}
+.footer_iconsleft {
+  height: 23px;
+  width: 23px;
+  padding-left: 5px;
 }
 
 @keyframes float {
@@ -822,6 +831,10 @@ h6 {
   text-decoration: none;
   color: #fff;
 }
+.download_apptextbottom a {
+  text-decoration: none;
+}
+
 .download_apptext > a {
   color: #000000;
 }
