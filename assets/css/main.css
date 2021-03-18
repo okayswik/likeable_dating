@@ -517,7 +517,6 @@ h6 {
   margin-bottom: 0;
   z-index: 1;
   font-size: 70px;
-  font-weight: bold;
   color: #eeeeee;
 }
 .banner.style5 .content h1 {
@@ -705,7 +704,7 @@ h6 {
   max-width: 1000px;
 }
 .padding_likable {
-  padding-bottom: 50px;
+  padding-top: 60px;
 }
 .letter_feel {
   font-weight: 500;
@@ -889,6 +888,9 @@ nav.navbar .navbar-nav .nav-link {
 }
 
 /* okayy */
+#app-view {
+  padding-top: 60px;
+}
 #app-view .container {
   position: relative;
 }
@@ -1008,12 +1010,16 @@ nav.navbar .navbar-nav .nav-link {
     cursor: grab;
   }
 }
-
-#services {
-  padding-top: 20px;
-  padding-bottom: 50px;
+#feel-card {
+  padding-top: 60px;
 }
 
+#services {
+  padding-top: 60px;
+}
+#theapp {
+  padding-top: 60px;
+}
 .panel {
   border: 2px solid #e3e1e1;
   border-radius: 20px;
