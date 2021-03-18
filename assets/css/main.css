@@ -491,7 +491,7 @@ h6 {
 /* Banner (style5) */
 
 .banner.style5 {
-  padding: 4rem 7rem 2rem 7rem;
+  padding: 100px 0;
   -moz-align-items: center;
   -webkit-align-items: center;
   -ms-align-items: center;
@@ -514,11 +514,14 @@ h6 {
   position: relative;
   width: 40rem;
   max-width: 100%;
-  margin-bottom: 3rem;
+  margin-bottom: 0;
   z-index: 1;
   font-size: 70px;
-  font-weight: 600;
+  font-weight: bold;
   color: #eeeeee;
+}
+.banner.style5 .content h1 {
+  font-weight: bold;
 }
 
 .banner.style5 .image {
@@ -532,8 +535,8 @@ h6 {
   flex-shrink: 0;
   position: absolute;
   width: 100%;
-  height: 70%;
-  top: 10;
+  height: 100%;
+  top: 0;
   left: 0;
   border-radius: 0;
   opacity: 15;
@@ -549,11 +552,11 @@ h6 {
   -ms-object-position: center;
   object-position: center;
   display: block;
-  position: absolute;
-  top: -80px;
+  /* position: absolute;
+  top: -80px; */
   left: 0;
   width: 100%;
-  height: 113%;
+  height: 100%;
   border-radius: 0;
 }
 
@@ -1129,4 +1132,8 @@ nav.navbar .navbar-nav .nav-link {
 }
 .form-control:hover {
   border: none;
+}
+.top-sections {
+  background-image: url(/images/BG.png);
+  background-size: cover;
 }
