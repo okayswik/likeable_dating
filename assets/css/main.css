@@ -639,6 +639,7 @@ h6 {
 
 .img-comp-img img {
   display: block;
+  object-fit: contain;
 }
 
 .img-comp-slider {
@@ -646,7 +647,6 @@ h6 {
   z-index: 9;
   cursor: ew-resize;
   /*set the appearance of the slider:*/
-
   width: 33px;
   padding: 15px;
   height: 33px;
@@ -655,11 +655,11 @@ h6 {
   box-shadow: 0 0 0 6px rgb(0 0 0 / 20%), 0 0 10px rgb(0 0 0 / 7%),
     inset 0 1px 0 rgb(255 255 255 / 30%);
   background: #ffffff url(/images/cd-arrows.png) no-repeat center center;
-  background-size: contain;
+  background-size: 20px;
 }
 
 .container_slider {
-  padding-top: 50px;
+  padding-top: 60px;
 }
 
 .layout {
@@ -858,6 +858,7 @@ nav.navbar .navbar-nav .nav-link {
 
 #theslider {
   overflow: hidden;
+  padding-top: 10px;
 }
 
 .navbar-light .navbar-toggler {
@@ -1146,11 +1147,18 @@ nav.navbar .navbar-nav .nav-link {
   border-top: 1px solid #ffffff !important;
   border-left: 1px solid #ffffff !important ;
   border-right: 1px solid #ffffff !important;
+  border-radius: 0px !important;
+
 }
-.form-control:hover {
+.form-control:focus {
   border: none;
+  box-shadow: none !important;
 }
 .top-sections {
   background-image: url(/images/BG.png);
   background-size: cover;
 }
+
+.about-likable > div > .row {
+  position: relative;
+  margin: 0;
