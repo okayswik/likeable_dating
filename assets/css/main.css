@@ -491,7 +491,7 @@ h6 {
 /* Banner (style5) */
 
 .banner.style5 {
-  padding: 5rem 7rem 2rem 7rem;
+  padding: 4rem 7rem 2rem 7rem;
   -moz-align-items: center;
   -webkit-align-items: center;
   -ms-align-items: center;
@@ -645,13 +645,15 @@ h6 {
   cursor: ew-resize;
   /*set the appearance of the slider:*/
   margin: 2px;
-  width: 60px;
-  height: 60px;
+  width: 33px;
+  padding: 15px;
+  height: 33px;
   opacity: 1;
   border-radius: 50%;
   box-shadow: 0 0 0 6px rgb(0 0 0 / 20%), 0 0 10px rgb(0 0 0 / 7%),
     inset 0 1px 0 rgb(255 255 255 / 30%);
   background: #ffffff url(/images/cd-arrows.png) no-repeat center center;
+  background-size: contain;
 }
 
 .container_slider {
@@ -828,7 +830,7 @@ nav.navbar {
   background-color: white;
   width: 100%;
   z-index: 2;
-  padding: 1rem 1rem;
+  padding: 15px 0px;
   font-size: 17px;
   color: var(--primary-color);
   font-weight: 500;
@@ -1121,6 +1123,10 @@ nav.navbar .navbar-nav .nav-link {
   padding-top: 30px;
 }
 .form-control {
-  border-top: 1px solid #528cc6 !important;
-  border-left: ;
+  border-top: 1px solid #ffffff !important;
+  border-left: 1px solid #ffffff !important ;
+  border-right: 1px solid #ffffff !important;
+}
+.form-control:hover {
+  border: none;
 }
