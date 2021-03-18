@@ -121,9 +121,6 @@ ol,
 ul {
   list-style: none;
 }
-section {
-  padding-top: 50px;
-}
 
 blockquote,
 q {
@@ -494,7 +491,7 @@ h6 {
 /* Banner (style5) */
 
 .banner.style5 {
-  padding: 7rem 7rem 2rem 7rem;
+  padding: 5rem 7rem 2rem 7rem;
   -moz-align-items: center;
   -webkit-align-items: center;
   -ms-align-items: center;
@@ -517,7 +514,7 @@ h6 {
   position: relative;
   width: 40rem;
   max-width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   z-index: 1;
   font-size: 70px;
   font-weight: 600;
@@ -553,7 +550,7 @@ h6 {
   object-position: center;
   display: block;
   position: absolute;
-  top: -64px;
+  top: -80px;
   left: 0;
   width: 100%;
   height: 113%;
@@ -703,7 +700,7 @@ h6 {
   max-width: 1000px;
 }
 .padding_likable {
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 .letter_feel {
   font-weight: 500;
@@ -711,7 +708,7 @@ h6 {
   padding-bottom: 20px;
 }
 .container_feel {
-  max-width: 1150px;
+  max-width: 1080px;
 }
 
 .footer_likable {
@@ -770,7 +767,10 @@ h6 {
   box-shadow: 0 0 50px #cbe9ffe9;
   transform: scale(1.1);
 }
-
+.card-title {
+  font-size: 15px;
+  text-align: center;
+}
 .fa {
   text-align: center;
   font-size: 29px !important;
@@ -828,12 +828,10 @@ nav.navbar {
   background-color: white;
   width: 100%;
   z-index: 2;
-  line-height: 30px;
-  padding: 18px 0;
+  padding: 1rem 1rem;
   font-size: 17px;
   color: var(--primary-color);
   font-weight: 500;
-  padding-top: 38px;
 }
 
 nav.navbar .navbar-nav .nav-link {
@@ -854,6 +852,7 @@ nav.navbar .navbar-nav .nav-link {
 
 .about-likable {
   width: 100%;
+  padding-top: 100px;
 }
 .about-likable > div > .row {
   position: relative;
@@ -1113,11 +1112,15 @@ nav.navbar .navbar-nav .nav-link {
   font-size: 16px;
   width: 150px;
   height: 44px;
-  border-radius: 10px;
+  border-radius: 2px;
 }
 .modal-title {
   font-size: 20px;
 }
 .make_image {
   padding-top: 30px;
+}
+.form-control {
+  border-top: 1px solid #528cc6 !important;
+  border-left: ;
 }
