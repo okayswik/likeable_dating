@@ -686,11 +686,11 @@ h6 {
 .letter_app {
   font-weight: 500;
   font-size: 46px;
-  padding-bottom: 20px;
 }
 .container_app {
+  padding-top: 60px;
   max-width: 740px;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
 }
 .image_about {
   padding-top: 30px;
@@ -709,7 +709,7 @@ h6 {
 .letter_feel {
   font-weight: 500;
   font-size: 46px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 .container_feel {
   max-width: 1080px;
@@ -739,7 +739,7 @@ h6 {
   position: relative;
   display: flex;
   flex-direction: column;
-  background-color: #fff;
+  background-color: #fff !important;
   border-radius: 20px;
   transition: all 0.2s ease;
   cursor: pointer;
@@ -750,15 +750,15 @@ h6 {
 }
 
 .card:hover {
-  box-shadow: 0 0 50px #99a2a917;
-  transform: scale(1.1);
+  box-shadow: 0 0 20px #99a2a917;
+  transform: translateY(-8px);
 }
 .card.omg {
-  box-shadow: 0 0 5px #e1ebf217;
+  box-shadow: 0 0 5px #eef4f717;
   position: relative;
   display: flex;
   flex-direction: column;
-  background-color: #fff;
+  background-color: transparent !important;
   border-radius: 20px;
   transition: all 0.2s ease;
   cursor: pointer;
@@ -888,9 +888,7 @@ nav.navbar .navbar-nav .nav-link {
 }
 
 /* okayy */
-#app-view {
-  padding-top: 60px;
-}
+
 #app-view .container {
   position: relative;
 }
@@ -1017,9 +1015,7 @@ nav.navbar .navbar-nav .nav-link {
 #services {
   padding-top: 60px;
 }
-#theapp {
-  padding-top: 60px;
-}
+
 .panel {
   border: 2px solid #e3e1e1;
   border-radius: 20px;
@@ -1104,16 +1100,18 @@ nav.navbar .navbar-nav .nav-link {
 .contact_btn {
   background-color: transparent;
   border: none;
-  outline: none;
+  outline: none !important;
 }
 .contact_btn:hover {
   border: none;
   text-decoration-color: none;
-  outline: none;
+  outline: none !important;
+  transform: scale(1.1);
 }
 .contact_btn:active {
   text-decoration: none !important;
-  outline: none;
+  outline: none !important;
+  transform: scale(1.1);
 }
 .send_messagebtn {
   justify-content: left;
