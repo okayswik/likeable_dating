@@ -654,8 +654,8 @@ h6 {
   border-radius: 50%;
   box-shadow: 0 0 0 6px rgb(0 0 0 / 20%), 0 0 10px rgb(0 0 0 / 7%),
     inset 0 1px 0 rgb(255 255 255 / 30%);
-  background-color: #ffffff;
-  background-image: url("https://icons-for-free.com/iconfiles/png/512/double+arrow+doublechevronleftright+left+right+arrow+icon-1320185729067056308.png")
+  background: #ffffff
+    url(https://icons-for-free.com/iconfiles/png/512/double+arrow+doublechevronleftright+left+right+arrow+icon-1320185729067056308.png)
     no-repeat center center;
   background-size: 20px;
 }
