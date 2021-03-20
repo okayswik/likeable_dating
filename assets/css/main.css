@@ -654,7 +654,7 @@ h6 {
   border-radius: 50%;
   box-shadow: 0 0 0 6px rgb(0 0 0 / 20%), 0 0 10px rgb(0 0 0 / 7%),
     inset 0 1px 0 rgb(255 255 255 / 30%);
-  background: #ffffff url(/images/cd-arrows.png) no-repeat center center;
+  background: #ffffff url("/images/cd-arrows.png") no-repeat center center;
   background-size: 20px;
 }
 
@@ -1155,7 +1155,7 @@ nav.navbar .navbar-nav .nav-link {
   box-shadow: none !important;
 }
 .top-sections {
-  background-image: url(/images/BG.png);
+  background-image: url("/images/BG.png");
   background-size: cover;
 }
 
